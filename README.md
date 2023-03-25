@@ -20,4 +20,4 @@ Open a terminal, navigate to the playbook directory, and execute the following c
 
 The playbook will automate the process of installing the required packages, downloading and installing Lutris, configuring Wine and Proton, installing Wabbajack, and downloading and installing the modlist.
 
-Please note that the provided playbook assumes you have already installed and configured Wine, as well as logged in to Steam to allow for the installation of Proton. If you need to perform additional steps or configurations, please let me know, and I can help you adjust the playbook accordingly.
+Please note that the provided playbook assumes you have already installed and configured Wine, as well as logged in to Steam to allow for the installation of Proton.
