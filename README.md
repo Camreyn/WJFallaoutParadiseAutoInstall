@@ -5,8 +5,6 @@ Please make sure you follow these steps to run the playbook:
 Make sure you have Ansible installed on your system. If you don't have it installed, you can follow the official installation guide to install Ansible.
 Create a directory for the playbook and save the provided YAML files in it. Organize the files as follows:
 
-    lua
-
     playbook_directory/
     |-- main.yml
     |-- tasks/
@@ -17,8 +15,6 @@ Create a directory for the playbook and save the provided YAML files in it. Orga
         |-- install_modlist.yml
 
 Open a terminal, navigate to the playbook directory, and execute the following command:
-
-    bash
 
     ansible-playbook main.yml
 
