@@ -1,0 +1,9 @@
+---
+- name: Install required packages
+  ansible.builtin.package:
+    name:
+      - wine
+      - winetricks
+      - steam
+      - curl
+    state: present
