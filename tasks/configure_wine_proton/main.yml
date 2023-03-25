@@ -1,0 +1,10 @@
+---
+- name: Set Wine and Proton environment variables
+  ansible.builtin.lineinfile:
+    path: "{{ ansible_env.HOME }}/.bashrc"
+    line: "export {{ item }}"
+  loop:
+    - "WINEESYNC=1"
+    - "WINEFSYNC=1"
+    - "PROTON_NO_ESYNC=1"
+    - "PROTON_NO_FSYNC=1"
