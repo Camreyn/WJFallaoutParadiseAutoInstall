@@ -1,0 +1,10 @@
+---
+- name: Create Wabbajack installation directory
+  ansible.builtin.file:
+    path: "{{ ansible_env.HOME }}/Wabbajack"
+    state: directory
+
+- name: Download Wabbajack
+  ansible.builtin.get_url:
+    url: "https://github.com/wabbajack-tools/wabbajack/releases/download/latest/Wabbajack.exe"
+    dest: "{{ ansible_env.HOME }}/Wabbajack/Wabbajack.exe"
