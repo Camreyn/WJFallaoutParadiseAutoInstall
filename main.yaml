@@ -1,0 +1,19 @@
+---
+- name: Install Fallout 4 Wabbajack Modlist for Linux
+  hosts: steamdeck
+  gather_facts: no
+  tasks:
+    - name: Install required packages
+      import_tasks: tasks/install_packages.yml
+
+    - name: Download and install Lutris
+      import_tasks: tasks/install_lutris.yml
+
+    - name: Configure Wine and Proton
+      import_tasks: tasks/configure_wine_proton.yml
+
+    - name: Install Wabbajack
+      import_tasks: tasks/install_wabbajack.yml
+
+    - name: Download and install modlist
+      import_tasks: tasks/install_modlist.yml
